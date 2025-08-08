@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odontologic</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="menu">
+        <img src="../Imagens/download.png" alt="" id="icone">
+        <a href="cadastrarCliente.html"><button class="botao" onclick="" id="botaoCadastrarCliente">Cadastrar Cliente</button></a>
+        <a href="cadastrarDentista.html"><button class="botao" onclick="" id="botaoCadastrarDentista">Cadastrar Dentista</button></a>
+        <button class="botao" onclick="excluirCliente()">Excluir Cliente</button>
+        <button class="botao" onclick="excluirDentista()">Excluir Dentista</button>
+        <a href="consulta.html"><button class="botao" id="botaoConsulta">Marcar Consulta</button></a>
+        <button class="botao" onclick="excluirConsulta()">Desmarcar Consulta</button>
+        <a href="anamnese.html"><button class="botao" id="botaoAnamnese">Preencher Anamnese</button></a>
+        <button class="botao" onclick="mostrarTodosClientes()">Mostrar Clientes</button>
+        <button class="botao" onclick="mostrarTodosDentistas()">Mostrar Dentistas</button>
+        <button class="botao" onclick="mostrarTodasConsultas()">Mostrar Consultas</button>
+    </div>
+    <p id="visualizar"></p>
+
+    <script src="app.js"></script>
+</body>
+</html>
