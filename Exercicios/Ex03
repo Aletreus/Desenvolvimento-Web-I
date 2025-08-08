@@ -1,0 +1,26 @@
+function menornumero(n1, n2, n3){
+    if(n1 < n2 && n1 < n3){
+        menor = n1
+    }else if(n2 < n1 && n2 < n3){
+        menor = n2
+    }else if(n3 < n1 && n3 < n2){
+        menor = n3
+    }
+    return menor
+}
+function maiornumero(n1,n2,n3){
+    if(n1 > n2 && n1 > n3){
+        maior = n1
+    }else if(n2 > n1 && n2 > n3){
+        maior = n2
+    }else if(n3 > n1 && n3 > n2){
+        maior = n3
+    }
+    return maior
+}
+var numero1 = prompt('Primeiro numero: ')
+var numero2 = prompt('Segundo numero: ')
+var numero3 = prompt('Terceiro Numero: ')
+men = menornumero(numero1,numero2,numero3)
+mai = maiornumero(numero1,numero2,numero3)
+document.write(`O maior numero digitado foi ${mai} e o menor foi ${men}`)
