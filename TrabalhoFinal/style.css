@@ -1,0 +1,58 @@
+*{
+    background-color:aliceblue;
+    padding: 0%;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+#menu{
+    width: 30%;
+    height:550px;
+    background-color: white;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.216);
+}
+
+#icone{
+    width: 90%;
+    margin: 10px;
+    
+}
+
+.botao{
+    width: 90%;
+    height: 30px;
+    background-color: aliceblue;
+    text-align: left;
+    padding-left: 10px;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 5px;
+}
+
+#div2{
+    margin-top: 10px;
+    width: 90%;
+    height: 40%;
+    margin: auto;
+    background-color: rgb(217, 217, 217);
+}
+
+#botaoAnamnese{
+    background-color: antiquewhite;
+}
+
+#botaoConsulta{
+    background-color: antiquewhite;
+}
+#botaoCadastrarCliente{
+    background-color: antiquewhite;
+}
+#botaoCadastrarDentista{
+    background-color: antiquewhite;
+}
