@@ -1,0 +1,90 @@
+function criarCookie(nome, valor, expira){
+    var dtExpira = "expires="+expira;
+    document.cookie = nome + "=" + valor + "; " + dtExpira;
+    //cookie final = nomeUsuario=nome; expires= Tue, 01 Jan 2115 12:00:00 UTC 
+}
+
+function lerCookie(nome){
+    var vnome = nome + "=";
+    //vnome -> nomeUsuario=
+    var ca = document.cookie.split(';');
+    //ca -> nomeUsuario=nome
+    for(var i=0; i<ca.length; i++){
+        var c = ca[i];
+        while(c.charAt(0)==' '){
+            c = c.substring(1);
+        }
+        if(c.indexOf(vnome) == 0)
+            return c.substring(vnome.length,c.length);
+    }
+    return "";
+}
+
+/*function verificarCookie(){
+    var leitura = prompt("")
+    var username=lerCookie("");
+    if(username == ""){
+        alert("Bem vindo novamente " + username);
+    }else{
+        username =  prompt("Escolha como deseja ler a palavra. [1] TUDO MAIÚSCULO;\n[2] tudo minúsculo;\n[3] TuDo AlTeRnAdO.");
+        if (username != "" && username != null){
+            criarCookie("Leitura", username, " Tue, 01 Jan 2115 12:00:00 UTC ");
+        }
+    }
+}*/
+
+function verificarCookie(){
+    var contrario=lerCookie('modo');
+    if(contrario == ""){
+        modo =  prompt("Escolha como deseja ler a palavra. [1] Normal\n[2] etnerf arp zarT (Traz pra frente)\nEscolha: ");
+        if (modo != "" && modo != null){
+            criarCookie("modo", modo, " Tue, 01 Jan 2115 12:00:00 UTC ");
+        }
+    }else{
+        var retornaModo = contrario
+    }
+    var username=lerCookie("leitura");
+    if(username == ""){
+        leitura =  prompt("Escolha como deseja ler a palavra. [1] TUDO MAIÚSCULO;\n[2] tudo minúsculo;\n[3] TuDo AlTeRnAdO.\nEscolha: ");
+        if (leitura != "" && leitura != null){
+            criarCookie("Leitura", leitura, " Tue, 01 Jan 2115 12:00:00 UTC ");
+        }
+    }else{
+        var retornaLeitura = username
+    }
+}
+
+function alternado(palavra){
+    var lista = []
+    for(let i in palavra){
+        if(i%2 == 0){
+            lista.push(palavra[i])
+            lista[i] = lista[i].toUpperCase()
+        }
+        else{
+            lista.push(palavra[i])
+            lista[i] = lista[i].toLowerCase()
+        }
+    }
+}
+
+verificarCookie()
+
+var palavra = prompt('Insira a String: ')
+alert(retornaLeitura)
+switch(retornaLeitura){
+    case 1:
+        palavra = toUpperCase(palavra);
+        break;
+    case 2:
+        palavra = toLowerCase(palavra);
+        break;
+    case 3:
+        palavra = alternado(palavra)
+        break;
+}
+
+switch(retornaModo){
+    case 1:
+        
+}
