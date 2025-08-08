@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(4, 4, 4);
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+}
+
+.p {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input {
+    padding: 8px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#voltar{
+    margin-left: 40%;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: antiquewhite;
+}
+
+#submitButton{
+    margin-top: 7%;
+    margin-left: 63%;
+    margin-bottom: 20px;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+}
